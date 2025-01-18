@@ -13,7 +13,7 @@ function HomePage() {
     e.preventDefault();
     try {
       SetLoader(true);
-      const response = await axios.post('http://localhost:5000/analyze', { url: videoUrl });
+      const response = await axios.post('https://youtubeapi-backend.onrender.com/analyze', { url: videoUrl });
       setData(response.data);
       // Navigate to /analysis page and pass the data via state
       SetLoader(false);
