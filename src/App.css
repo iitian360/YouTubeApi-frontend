@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_cont{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.form_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  color: white;
+  border: 1px solid #383838;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form_main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form_main input{
+  width: 60%;
+  outline: none;
+  border: 1px solid #383838;
+  background-color: transparent;
+  border-radius: 5px;
+  padding:10px 5px 10px 5px;
+  color: #383838;
+  margin-top: 10px;
+}
+.form_main button{
+  width: 60%;
+  margin-top: 5px;
+  outline: none;
+  padding:10px 5px 10px 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bar_cont{
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.caption{
+  color: gray;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bar_primary{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+}
+.analysis{
+  width:50%;
+  border: 1px solid rgb(50, 50, 50);
+  box-shadow: rgba(72, 76, 78, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 10px 5px 10px;
+  height: 100%;
+  border-radius: 5px;
+  
+}
+.scoreBox{
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  
+}
+.score{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.score div{
+  font-size: 25px;
+  font-weight:500;
+}
+.score span{
+  font-size: 15px;
+}
+
+/* /////////////////////////////// */
+.second_bar{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sentiment-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.label {
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bar-container {
+  flex-grow: 1;
+  background-color: #272727;
+  height: 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.bar {
+  height: 100%;
+  text-align: right;
+  color: white;
+  padding-right: 8px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar.agree {
+  background-color:white; /* Green for agree */
+}
+
+.bar.disagree {
+  background-color:white; /* Red for disagree */
+}
+.barBox{
+  border: 1px solid rgb(50, 50, 50);
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 30px 10px 5px 10px;
+  padding: 20px 0 0 0;
+  box-shadow: rgba(72, 76, 78, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.loader_cont{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backbtn{
+  outline: none;
+  border: 1px solid rgb(50, 50, 50);
+  box-shadow: rgba(72, 76, 78, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding:9px 8px 9px 8px;
+  margin: 5px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
 }
