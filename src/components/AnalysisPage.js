@@ -19,13 +19,13 @@ function AnalysisPage() {
 
     return (
         <div className="bar_cont">
-            <h2>Analysis Results</h2>
+            <h3>Analysis Results</h3>
             <div className='bar_primary'>
                 <div className="analysis">
                     <ChartBar data={data} />
                 </div>
                 <div className="analysis">
-                    <h2>Total Comments</h2>
+                    <h4>Total Comments</h4>
                     <span style={{ 'fontWeight': 'bold', 'fontSize': '30px' }}>{data.totalComment}</span>
                     <div className="scoreBox">
                         <div className="score">

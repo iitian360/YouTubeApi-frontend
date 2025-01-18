@@ -9,7 +9,7 @@ const SentimentAnalysis = ({ data }) => {
 
     return (
         <div className='second_bar'>
-            <h2>Sentiment Analysis</h2>
+            <h4>Sentiment Analysis</h4>
             <div className="sentiment-bar">
                 <div className="label">
                     <div>Agree</div>

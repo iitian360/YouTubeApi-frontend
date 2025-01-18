@@ -45,7 +45,6 @@ const options = {
             },
             title: {
                 display: true,
-                text: 'Comments', // Label for the x-axis
                 color: 'white', // Title color
                 font: {
                     size: 14,
@@ -78,7 +77,7 @@ const ChartComponent = ({ data }) => {
         <Bar data={{
             labels: data.monthlyData.map((d) => d.month),
             datasets: [
-                {
+                {   label:"Comments",
                     data: data.monthlyData.map((d) => d.count),
                     backgroundColor: 'rgb(134, 106, 236)',
                 },
